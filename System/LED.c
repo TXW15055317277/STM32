@@ -33,3 +33,13 @@ void LED_RED_OFF(void)
 {
     GPIO_SetBits(GPIOF, GPIO_Pin_9);
 }
+
+uint8_t LED_GREEN_Status(void)
+{
+    return GPIO_ReadOutputDataBit(GPIOF, GPIO_Pin_10);
+}
+
+uint8_t LED_RED_Status(void)
+{
+    return GPIO_ReadOutputDataBit(GPIOF, GPIO_Pin_9);
+}

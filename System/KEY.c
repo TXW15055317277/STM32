@@ -30,7 +30,7 @@ int8_t KEY_Scan(void)
         delay_ms(20);
         if (GPIO_ReadInputDataBit(GPIOE, GPIO_Pin_4) == 0)
         {
-            while (GPIO_ReadInputDataBit(GPIOE, GPIO_Pin_4) == 1);
+            while (GPIO_ReadInputDataBit(GPIOE, GPIO_Pin_4) == 0);
             delay_ms(20);
             KEY = 0;
         }
@@ -40,7 +40,7 @@ int8_t KEY_Scan(void)
         delay_ms(20);
         if (GPIO_ReadInputDataBit(GPIOE, GPIO_Pin_3) == 0)
         {
-            while (GPIO_ReadInputDataBit(GPIOE, GPIO_Pin_3) == 1);
+            while (GPIO_ReadInputDataBit(GPIOE, GPIO_Pin_3) == 0);
             delay_ms(20);
             KEY = 1;
         }
@@ -50,7 +50,7 @@ int8_t KEY_Scan(void)
         delay_ms(20);
         if (GPIO_ReadInputDataBit(GPIOE, GPIO_Pin_2) == 0)
         {
-            while (GPIO_ReadInputDataBit(GPIOE, GPIO_Pin_2) == 1);
+            while (GPIO_ReadInputDataBit(GPIOE, GPIO_Pin_2) == 0);
             delay_ms(20);
             KEY = 2;
         }
@@ -60,7 +60,7 @@ int8_t KEY_Scan(void)
         delay_ms(20);
         if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0) == 1)
         {
-            while (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0) == 0);
+            while (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0) == 1);
             delay_ms(20);
             KEY = 3;
         }

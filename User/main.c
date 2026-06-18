@@ -16,23 +16,32 @@ int main(void)
         KEY_Num = KEY_Scan();
         if (KEY_Num == 0)
         {
-             LED_RED_OFF();
-             LED_GREEN_ON();
+            LED_RED_OFF();
+            LED_GREEN_ON();
         }
         if (KEY_Num == 1)
         {
-             LED_RED_ON();
-             LED_GREEN_OFF();
+            LED_RED_ON();
+            LED_GREEN_OFF();
         }
         if (KEY_Num == 2)
         {
-             LED_RED_OFF();
-             LED_GREEN_OFF();
+            uint8_t LED_Status = LED_GREEN_Status();
+            if (LED_Status == 0)
+            {
+                LED_RED_ON();
+                LED_GREEN_OFF();
+            }
+            else
+            {
+                LED_RED_OFF();
+                LED_GREEN_ON();
+            }
         }
         if (KEY_Num == 3)
         {
-             LED_RED_ON();
-             LED_GREEN_ON();
+            LED_RED_ON();
+            LED_GREEN_ON();
         }
     }
 }
