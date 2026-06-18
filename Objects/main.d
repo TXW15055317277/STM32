@@ -37,3 +37,5 @@
 .\objects\main.o: .\System\LED.h
 .\objects\main.o: .\System\DELAY.h
 .\objects\main.o: .\System\KEY.h
+.\objects\main.o: .\System\BEEP.h
+.\objects\main.o: .\System\LIGHT_SENSOR.h

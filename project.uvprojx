@@ -698,6 +698,26 @@
               <FileType>5</FileType>
               <FilePath>.\System\KEY.h</FilePath>
             </File>
+            <File>
+              <FileName>BEEP.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\System\BEEP.c</FilePath>
+            </File>
+            <File>
+              <FileName>BEEP.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\System\BEEP.h</FilePath>
+            </File>
+            <File>
+              <FileName>LIGHT_SENSOR.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\System\LIGHT_SENSOR.c</FilePath>
+            </File>
+            <File>
+              <FileName>LIGHT_SENSOR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\System\LIGHT_SENSOR.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

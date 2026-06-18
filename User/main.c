@@ -3,45 +3,30 @@
 #include "LED.h"
 #include "DELAY.h"
 #include "KEY.h"
+#include "BEEP.h"
+#include "LIGHT_SENSOR.h"
 
-int8_t KEY_Num;
 int main(void)
 {
+    LIGHT_SENSOR_Init();
+    BEEP_Init();
     LED_Init();
-    KEY_Init();
     LED_RED_OFF();
     LED_GREEN_OFF();
+    
     while(1)
     {
-        KEY_Num = KEY_Scan();
-        if (KEY_Num == 0)
-        {
-            LED_RED_OFF();
-            LED_GREEN_ON();
-        }
-        if (KEY_Num == 1)
+        if(LIGHT_SENSOR_Status() == 1)
         {
             LED_RED_ON();
             LED_GREEN_OFF();
+            BEEP_ON();
         }
-        if (KEY_Num == 2)
+        else
         {
-            uint8_t LED_Status = LED_GREEN_Status();
-            if (LED_Status == 0)
-            {
-                LED_RED_ON();
-                LED_GREEN_OFF();
-            }
-            else
-            {
-                LED_RED_OFF();
-                LED_GREEN_ON();
-            }
-        }
-        if (KEY_Num == 3)
-        {
-            LED_RED_ON();
+            LED_RED_OFF();
             LED_GREEN_ON();
+            BEEP_OFF();
         }
     }
 }
