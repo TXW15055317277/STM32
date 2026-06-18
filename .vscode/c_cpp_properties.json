@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/User",
                 "${workspaceFolder}/Core",
-                "${workspaceFolder}/FWLib/inc"
+                "${workspaceFolder}/FWLib/inc",
+                "${workspaceFolder}/System"
             ],
             "defines": [
                 "_DEBUG",
