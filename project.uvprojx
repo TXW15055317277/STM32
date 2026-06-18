@@ -678,6 +678,26 @@
               <FileType>5</FileType>
               <FilePath>.\System\LED.h</FilePath>
             </File>
+            <File>
+              <FileName>DELAY.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\System\DELAY.c</FilePath>
+            </File>
+            <File>
+              <FileName>DELAY.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\System\DELAY.h</FilePath>
+            </File>
+            <File>
+              <FileName>KEY.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\System\KEY.c</FilePath>
+            </File>
+            <File>
+              <FileName>KEY.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\System\KEY.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

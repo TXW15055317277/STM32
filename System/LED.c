@@ -14,3 +14,22 @@ void LED_Init(void)
 		GPIO_SetBits(GPIOF, GPIO_Pin_9);
 		GPIO_SetBits(GPIOF, GPIO_Pin_10);
 }
+void LED_GREEN_ON(void)
+{
+    GPIO_ResetBits(GPIOF, GPIO_Pin_10);
+}
+
+void LED_GREEN_OFF(void)
+{
+    GPIO_SetBits(GPIOF, GPIO_Pin_10);
+}
+
+void LED_RED_ON(void)
+{
+    GPIO_ResetBits(GPIOF, GPIO_Pin_9);
+}
+
+void LED_RED_OFF(void)
+{
+    GPIO_SetBits(GPIOF, GPIO_Pin_9);
+}
